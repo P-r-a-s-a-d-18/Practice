@@ -12,7 +12,6 @@ for i in range(len(lst)):
 print("\n")
 
 for i in range(len(lst)):
-    for j in range(len(lst) - 1, 0, -1):
-        if i != j:
+    for j in range(len(lst) - 1, i, -1):
             if lst[i] + lst[j] == sum:
                 print(lst[i], lst[j])
